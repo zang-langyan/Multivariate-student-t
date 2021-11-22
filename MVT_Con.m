@@ -1,6 +1,6 @@
 function [para,f_c]=MVT_Con(x1,x2,mu,scale,df)
 % This function returns the Conditional distribution of X2 given X1 
-% X1 and X2 are parts of Multivariate t distribution with 2 dimention 
+% X1 and X2 are parts of Multivariate t distribution with 2 dimension 
 % Input
 %      - x1 is the vector that x2 conditioned on 
 %      - x2 the span expected to calculate the conditional distribution
