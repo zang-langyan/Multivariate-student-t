@@ -1,6 +1,6 @@
 function [muhat,Sigmahat,nuhat] = MVTpara(T,knownpara1,knownpara2)
 % This function returns the approximate parameters from a n-by-p sample
-% assuming to be a p dimentional multivariate t distribution, by method
+% assuming to be a p dimensional multivariate t distribution, by method
 % Batch Approximation Algorithm attributed to Aeschliman, Park & Kak(2010)
 % Input
 %      - T is a n-by-p sample matrix with n observations and p variables
