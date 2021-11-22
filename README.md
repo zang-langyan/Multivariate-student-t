@@ -11,6 +11,8 @@ MLE_con_t.m estimates the Conditional X2|X1 parameters via Maximum likelihood Es
 
 MVTpara.m returns the approximate parameters from a n-by-p sample assuming to be a p dimentional multivariate t distribution, by method Batch Approximation Algorithm attributed to Aeschliman, Park & Kak(2010)[2]
 
+S_weighted_t.m returns non-zero weighted sum of the univariate margins distribution from a p dimensional multivariate t distribution via characteristic function
+
 本程辑包中包含了计算多元T分布的概率密度和条件概率密度的各程序
 
 MVT.m 目前仅能计算二元T分布的概率密度
@@ -22,6 +24,8 @@ MVTrand.m 可生成p维的多元T分布随机数
 MLE_con_t.m 使用最大似然估计估计X2｜X1的条件分布参数（注：titer.m 并未包含其中，请勿使用titer.m 函数）
 
 MVTpara.m  使用Batch Approximation算法估计p维多元T分布的参数（Aeschliman, Park & Kak，2010)[2]
+
+S_weighted_t.m 利用特征函数计算多元T分布的加权和的分布参数和概率密度
 
 # References
 [1] Peng Ding. “On the Conditional Distribution of the Multivariate t Distribution”. In: The American Statistician 70.3 (July 2, 2016), pp. 293–295. issn: 0003-1305, 1537-2731. doi: 10.1080/00031305.2016.1164756. url: https://www.tandfonline.com/doi/full/ 10.1080/00031305.2016.1164756 (visited on 11/22/2021).
