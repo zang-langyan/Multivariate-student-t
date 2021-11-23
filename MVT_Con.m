@@ -17,7 +17,7 @@ mu_c = mu(2)+scale(2,1)/scale(1,1)*(x1-mu(1));
 % scale
 d1 = (x1-mu(1))./scale(1,1).*(x1-mu(1));
 fac = (df+d1)/(df+1);
-sigma_c = fac*(scale(2,2)-scale(2,1)/scale(1,1)*scale(1,2));
+sigma_c = sqrt(fac*(scale(2,2)-scale(2,1)/scale(1,1)*scale(1,2)));
 % degree of freedom
 df_c = (df+1)*ones(nc,1);
 para = [mu_c,sigma_c,df_c]; %conditional on x1 in row
